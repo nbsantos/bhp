@@ -95,7 +95,7 @@ def server_loop(local_host, local_port, remote_host, remote_port, receive_first)
     try:
         server.bind((local_host, local_port))
     except Exception as e:
-        print(f"problem on bin: {e:r}")
+        print(f"problem on bin: {e}")
 
         print(f"[!!] Failed to listen on {local_host}:{local_port:d}")
         print("[!!] Check for other listening sockets or correct permissions.")
